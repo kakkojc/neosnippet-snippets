@@ -1,0 +1,13 @@
+snippet     rule
+abbr        rule identifier : tag ...
+options     head
+    rule ${1:#:identifier} : ${2:#:tag}
+    {
+        meta:
+            author: ${3:#:author_name}
+            description: ${4:#:rule_description}
+        strings:
+            ${5}
+        condition:
+            ${7}
+    }
